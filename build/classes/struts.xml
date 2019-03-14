@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<package name="demo1" extends="struts-default" namespace="/">
+		<action name="userAction" class="cn.itcast.action.UserAction"></action>
+		<action name="valueStackDemo" class="cn.itcast.action.ValueStackDemoAction">
+			<result name="success">/valueStack.jsp</result>
+		</action>
+		<action name="objdemo" class="cn.itcast.action.ObjStackDemoAction">
+			<result name="success">/valueStack.jsp</result>
+		</action>
+		<action name="listdemo" class="cn.itcast.action.ListStackDemoAction">
+			<result name="success">/valueStack.jsp</result>
+		</action>
+		<action name="valuedemo" class="cn.itcast.valuestack.ValueStackAction">
+			<result name="success">/valueStack.jsp</result>
+		</action>
+		
+		<action name="valueobjdemo" class="cn.itcast.valuestack.ValueObjStackAction">
+			<result name="success">/valueObjStack.jsp</result>
+		</action>
+		
+		<action name="valuelistdemo" class="cn.itcast.valuestack.ValueListStackAction">
+			<result name="success">/valueListStack.jsp</result>
+		</action>
+		
+		
+		<action name="contextAction" class="cn.itcast.valuestack.ContextAction">
+			<result name="success">/context.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>
